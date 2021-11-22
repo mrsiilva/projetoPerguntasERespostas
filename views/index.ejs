@@ -1,0 +1,36 @@
+<%- include('./partials/header.ejs') %>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+
+    <div class="apresentacao">
+        <div class="texto-apresentacao">
+            <h1>Welcome to Ask me</h1>
+            <p>Esta é a sua mais nova plataforma favorita de perguntas e respostas!
+                Perfeita, para você tirar dúvidas e ainda ajudar outras pessoas.
+                Aproveite e faça sua primeira pergunta!
+            </p>
+            <a href="/perguntar" class="btn btnPerguntar">Perguntar</a><!--crio un link que direciona para a rota perguntar e com a class BTN, esse link vira um botao-->
+        </div>
+        <img src="img/blogging.png" alt="imagem" srcset="">
+    </div>
+
+    <div class="container">
+        <div class="container-topo">
+            <h2>Perguntas</h2>
+        </div>
+        <!--Preciso percorrer o array de perguntas, usando o for-->
+        <% perguntas.forEach(pergunta => { %> <!--é possivel acessar essas variaveis porque a rota da pagina principal no index.js, tem o metodo render que passa esse arquivo aqui como parametro-->
+            <div class="card perg-descricao">
+                <div class="card-body"> <!-- essa classe é Estilizaçao das perguntas via bootstrap-->
+                    <h6><%= pergunta.titulo %></h6><!--renderiza os titulos das perguntas-->
+                </div>
+                <div class="card-footer"><!-- essa classe é Estilizaçao das perguntas via bootstrap-->
+                    <a href="/pergunta/<%= pergunta.id %>"><button class="btn btnresponder">Responder</button></a>
+                    <!--pega o id de cada pergunta e coloca junto do link do botao de cada pergunta-->
+                </div>
+            </div>
+        <% }) %>
+    </div>
+    
+</body>
+<%- include('./partials/footerscripts.ejs') %>

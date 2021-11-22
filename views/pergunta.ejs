@@ -1,0 +1,32 @@
+<!--PAGINA INDIVIDUAL DE CADA PERGUNTA-->
+<%- include('./partials/header.ejs') %>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+
+
+    <div class="container">
+        <hr>
+        <h1><%= pergunta.titulo %></h1><!--mostra o titulo da pergunta-->
+        <p><%= pergunta.descricao %></p>
+        <hr>
+        <form method="POST" action="/responder">
+            <h4>Responda esta pergunta:</h4>
+            <textarea placeholder = "Digite sua resposta" class="form-control areaDeResposta" name="corpoResposta"></textarea><br>
+            <input type="hidden" name="pergunta" value="<%= pergunta.id %>"><!--hidden significa escondido-->
+            <button type="submit" class="btn">Responder</button>
+        </form>
+        <hr>
+        <h3>Respostas</h3>
+        <hr>
+        <% respostas.forEach((resposta) => {%>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <p><%= resposta.corpoResposta %></p>
+                </div>
+            </div>
+        <% }) %> <!--forEach pra percorrer o Array de respostas e mostrar todas na pagina-->
+
+    </div>
+</body>
+<%- include('./partials/footerscripts.ejs') %>

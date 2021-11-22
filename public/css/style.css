@@ -1,0 +1,90 @@
+body{
+    background-color: #eeecf0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar{
+    padding: 0 15px;
+    background-color: #4e227c;
+}
+
+nav .logo{
+    color: #faf9fc;
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.texto-apresentacao{
+    width: 30%;
+    font-size: 14px;
+}
+
+.texto-apresentacao h1{
+    display: block;
+    font-weight: bold;
+    text-align:justify;
+}
+
+.texto-apresentacao p{
+    text-align: justify;
+}
+
+
+.apresentacao img{
+    width: 50%;
+}
+
+.container-topo h1{
+    display: block;
+}
+
+.container-topo a{
+    margin-bottom: 15px;
+}
+.card{
+    background-color: #c9badb;
+}
+
+.perg-descricao{
+    margin-bottom: 15px;
+}
+
+.btn{
+    background-color: #684c8d;
+    color: #fdfdff;
+    border-radius: 20px;
+}
+
+
+.btnPerguntar{
+    height: 30px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 90px;
+    border-radius: 20px;
+    padding: 4px 3px;
+    
+}
+
+.btnPerguntar:hover{
+    background-color: #7b5ba5;
+}
+
+.btnresponder{
+    font-size: 12px;
+}
+
+#formulario-pergunta{
+    margin-top: 5vh; /*é o mesmo que colocar 5%*/
+}
+
+.areaDeResposta{
+    background-color: #c9badb;
+}
+

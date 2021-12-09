@@ -3,4 +3,4 @@
 <hr>
 <p>🚧 Em construção 🚧</p>
 
-![img-principal](https://user-images.githubusercontent.com/91692834/142911010-f058bec4-c078-4084-9c4f-c5da1e1ef2f4.PNG)
+![2021-12-09 15-51-48_Trim](https://user-images.githubusercontent.com/91692834/145459355-a398f1d5-ec43-4d33-b03c-d50586edcc45.gif)
